@@ -15,7 +15,7 @@ environment {
                  echo "----------- build complted ----------"
             }
         }
-    }
+    
     stage('SonarQube analysis') {
     environment {
       scannerHome = tool 'sonar-scanner'
@@ -26,4 +26,5 @@ environment {
     }
     }
   }
+}
 }
